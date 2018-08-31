@@ -1,6 +1,6 @@
 # loam_velodyne_kitti
-loam velodyne tested with the KITTI dataset
-
+ This package is a simple modified copy of [loam_velodyne git repository](https://github.com/laboshinl/loam_velodyne) from **laboshinl** to work with the KITTI dataset.
+ 
 How to build:
 
 ```
