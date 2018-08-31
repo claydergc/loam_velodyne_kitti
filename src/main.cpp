@@ -83,7 +83,7 @@ int main(int argc, char **argv)
   std::string path = argv[1];//load path
   std::string sequence = argv[2];//load sequence
   //std::string file = path + "/" + sequence + "/velodyne/" + getFrameStr(currentFrame) + ".bin";
-  std::string file = path + "/dataset/" + sequence + "/velodyne/" + getFrameStr(currentFrame) + ".bin";
+  std::string file = path + "/data_odometry_velodyne/dataset/" + sequence + "/velodyne/" + getFrameStr(currentFrame) + ".bin";
 
   // load point cloud
   FILE *stream;
@@ -206,7 +206,7 @@ int main(int argc, char **argv)
 	  cloud.clear();
 	  fclose(stream);
 	  currentFrame++;
-	  file = path + "/dataset/" + sequence + "/velodyne/" + getFrameStr(currentFrame) + ".bin";
+	  file = path + "/data_odometry_velodyne/dataset/" + sequence + "/velodyne/" + getFrameStr(currentFrame) + ".bin";
 	  std::cout<<file<<std::endl;
 	  fflush(stream);
 	  stream = fopen (file.c_str(),"rb");
