@@ -210,6 +210,7 @@ int main(int argc, char **argv)
 	  std::cout<<file<<std::endl;
 	  fflush(stream);
 	  stream = fopen (file.c_str(),"rb");
+	  free(data);
 	  num = 1000000;
 	  data = (float*)malloc(num*sizeof(float));
 	  px = data+0;
@@ -220,7 +221,7 @@ int main(int argc, char **argv)
       //multiScan.setup();
   }
 
-
+  free(data);
   out.close();
 
   //std::cout<<multiScan.getLaserCloud(0.0).first.size()<<std::endl;
