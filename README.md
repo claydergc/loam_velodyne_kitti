@@ -13,7 +13,7 @@ where there are functions that return transform matrices based on the Eigen libr
  
 Also, transformToEnd() and transformToStart() functions have been modified since the KITTI Dataset is distorsion free.
 
-The separation of the Velodyne HDL-64 rings have been done according to laboshinl's code.
+The separation of the Velodyne HDL-64's rings have been done according to laboshinl's code.
 
 How to build:
 
