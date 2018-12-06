@@ -39,7 +39,8 @@ BasicLaserOdometry::BasicLaserOdometry(float scanPeriod, size_t maxIterations) :
 
 void BasicLaserOdometry::transformToStart(const pcl::PointXYZI& pi, pcl::PointXYZI& po)
 {
-   float s = (1.f / _scanPeriod) * (pi.intensity - int(pi.intensity));
+   //float s = (1.f / _scanPeriod) * (pi.intensity - int(pi.intensity));
+   float s = 1.0f;
 
    po.x = pi.x - s * _transform.pos.x();
    po.y = pi.y - s * _transform.pos.y();
@@ -648,8 +649,8 @@ void BasicLaserOdometry::process()
    _transformSum.rot_z = rz;
    _transformSum.pos = trans;
 
-   transformToEnd(_cornerPointsLessSharp);
-   transformToEnd(_surfPointsLessFlat);
+   //transformToEnd(_cornerPointsLessSharp);
+   //transformToEnd(_surfPointsLessFlat);
 
    _cornerPointsLessSharp.swap(_lastCornerCloud);
    _surfPointsLessFlat.swap(_lastSurfaceCloud);
