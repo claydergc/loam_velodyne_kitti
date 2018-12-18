@@ -27,5 +27,6 @@ Running:
 $ ./main "KITTI Dataset Path" "NumberOfSequence"
 ```
 
-TODO
+Important things to change:
+
 Add time stamps to each function that returns a point cloud or transform. This should fix the results.
