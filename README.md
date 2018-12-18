@@ -25,6 +25,7 @@ $ make
 Running:
 ```
 $ ./main "KITTI Dataset Path" "NumberOfSequence"
+```
 
 TODO
 Add time stamps to each function that returns a point cloud or transform. This should fix the results.
