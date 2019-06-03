@@ -1,1 +1,1 @@
-This repository is out-dated and did not reproduce original KITTI Benchmark resuls. A repository of which I obtained better results can be found at [loam_velodyne_kitti_ros] https://github.com/claydergc/loam_velodyne_kitti_ros
+This repository is out-dated and did not reproduce original KITTI Benchmark resuls. A repository of which I obtained better results can be found at https://github.com/claydergc/loam_velodyne_kitti_ros
